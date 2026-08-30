@@ -1,0 +1,21 @@
+﻿# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Operating System
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Scripts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

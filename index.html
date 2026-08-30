@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Hi-Tech | Empowering Innovation Across Industries</title>
+  <meta name="description" content="Liberty Hi-Tech is a forward-thinking multi-industry leader providing Software Development, Web Services, Security & Surveillance, Smart Campus Automation, Aviation, Construction, Manpower, and Product Trading.">
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Ambient Glow Lights -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- STICKY GLASS NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo-link">
+        <img src="assets/logo/logo.png" alt="Liberty Hi-Tech Logo" class="brand-logo-img">
+        <div class="brand-text-group">
+          <span class="brand-title">Liberty <span>Hi-Tech</span></span>
+          <span class="brand-tagline">Empowering Innovation</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">8 Sectors</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i data-lucide="sun" id="themeIcon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i data-lucide="send"></i> Inquire Now
+        </a>
+
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open Mobile Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-group">
+        <span class="brand-title">Liberty <span>Hi-Tech</span></span>
+        <span class="brand-tagline">Empowering Innovation</span>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link"><i data-lucide="home"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><i data-lucide="info"></i> About Us</a></li>
+      <li><a href="#services" class="mobile-nav-link"><i data-lucide="layers"></i> 8 Core Sectors</a></li>
+      <li><a href="#faq" class="mobile-nav-link"><i data-lucide="help-circle"></i> FAQ</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><i data-lucide="mail"></i> Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">
+        <i data-lucide="sparkles"></i> Get a Free Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION WITH STARTING VIDEO (welcome-02.mp4) -->
+  <section class="hero-section" id="home">
+    <div class="hero-video-wrapper">
+      <video id="heroBgVideo" class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/welcome-02.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge-pill"><span>Multi-Sector Technology & Enterprise Solutions</span></div>
+
+        <h1 class="hero-title">
+          Empowering Innovation <br>
+          <span class="gradient-text">Across Industries</span>
+        </h1>
+
+        <p class="hero-description">
+          Liberty Hi-Tech is a forward-thinking organization dedicated to delivering innovative, high-quality solutions across diverse industries—uniting software, web engineering, AI surveillance, smart campus automation, aviation, construction, manpower, and international product trading.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#services" class="btn btn-primary btn-lg">
+            <i data-lucide="compass"></i> Explore 8 Sectors
+          </a>
+          <a href="#contact" class="btn btn-outline btn-lg"><i data-lucide="mail"></i> Get In Touch</a>
+        </div>
+<!-- Hero Stats Ribbon -->
+        <div class="hero-stats-ribbon">
+          <div class="stat-item">
+            <div class="stat-number">8<span>+</span></div>
+            <div class="stat-label">Core Industries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">250<span>+</span></div>
+            <div class="stat-label">Enterprise Deployments</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15<span>+</span></div>
+            <div class="stat-label">Global Trade Hubs</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">99.4<span>%</span></div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US & VISION/MISSION SECTION -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i data-lucide="building-2"></i> Corporate Profile
+        </div>
+        <h2 class="section-title">Forward-Thinking <span class="gradient-text">Excellence</span></h2>
+        <p class="section-subtitle">Delivering high-performance, technology-driven solutions that elevate performance, enhance efficiency, and ensure security across every business sector.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-narrative-col">
+          <p class="about-narrative">
+            <strong>Liberty Hi-Tech</strong> is dedicated to crafting bespoke, dependable solutions that bridge the gap between breakthrough digital innovations and tangible operational impact. We combine technological prowess with deep sector expertise to empower businesses and individuals worldwide.
+          </p>
+
+          <h3 style="font-size: 1.25rem; margin-bottom: 16px; color: #ffffff;">Our 4 Fundamental Pillars</h3>
+          
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i data-lucide="zap"></i>
+              </div>
+              <h4 class="value-title">Innovation</h4>
+              <p class="value-desc">Pioneering forward-looking technologies and creative problem solving across all disciplines.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i data-lucide="shield"></i>
+              </div>
+              <h4 class="value-title">Integrity</h4>
+              <p class="value-desc">Upholding transparent, ethical, and trustworthy standards with every partner and client.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i data-lucide="award"></i>
+              </div>
+              <h4 class="value-title">Excellence</h4>
+              <p class="value-desc">Uncompromising dedication to quality assurance, precision execution, and reliability.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i data-lucide="leaf"></i>
+              </div>
+              <h4 class="value-title">Sustainability</h4>
+              <p class="value-desc">Fostering thriving communities with eco-conscious strategies and sustainable infrastructure.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision & Mission Card -->
+        <div class="vision-mission-col">
+          <div class="vision-mission-card">
+            <div class="card-tab-nav">
+              <button class="tab-nav-btn active" data-tab="vision">
+                <i data-lucide="eye"></i> Our Vision
+              </button>
+              <button class="tab-nav-btn" data-tab="mission">
+                <i data-lucide="target"></i> Our Mission
+              </button>
+            </div>
+
+            <div class="tab-pane active" id="pane-vision">
+              <div class="tab-quote-box">
+                "To become a global leader in integrated technology and service solutions, shaping a future driven by innovation and sustainability."
+              </div>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+                We envision a connected world where enterprise operations, community security, talent capabilities, and global trade converge seamlessly through robust digital architectures and sustainable physical infrastructure.
+              </p>
+            </div>
+
+            <div class="tab-pane" id="pane-mission">
+              <ul class="mission-list">
+                <li class="mission-item">
+                  <span class="mission-check-icon"><i data-lucide="check"></i></span>
+                  <span>Empower individuals and businesses with cutting-edge technology solutions.</span>
+                </li>
+                <li class="mission-item">
+                  <span class="mission-check-icon"><i data-lucide="check"></i></span>
+                  <span>Drive growth, enhance security, and enable smarter, more efficient operations across industries.</span>
+                </li>
+                <li class="mission-item">
+                  <span class="mission-check-icon"><i data-lucide="check"></i></span>
+                  <span>Uphold values of innovation, integrity, and excellence across every engagement.</span>
+                </li>
+                <li class="mission-item">
+                  <span class="mission-check-icon"><i data-lucide="check"></i></span>
+                  <span>Foster thriving communities in a secure and sustainable environment.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 CORE BUSINESS SECTORS SECTION -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i data-lucide="grid"></i> Business Domains
+        </div>
+        <h2 class="section-title">8 Integrated <span class="gradient-text">Industry Sectors</span></h2>
+        <p class="section-subtitle">Explore Liberty Hi-Tech's full spectrum of end-to-end services engineered to transform and innovate your operations.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="sector-filter-bar" id="sectorFilterBar">
+        <button class="filter-btn active" data-filter="all">All 8 Sectors</button>
+        <button class="filter-btn" data-filter="tech">Technology & Web</button>
+        <button class="filter-btn" data-filter="security">Security & Campus</button>
+        <button class="filter-btn" data-filter="infrastructure">Aero & Construction</button>
+        <button class="filter-btn" data-filter="commerce">Commerce & Manpower</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="servicesGrid">
+        <!-- Rendered via JavaScript from COMPANY_DATA -->
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL CONTACT & INQUIRIES SECTION -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i data-lucide="mail"></i> Get In Touch
+        </div>
+        <h2 class="section-title">Partner With <span class="gradient-text">Liberty Hi-Tech</span></h2>
+        <p class="section-subtitle">Reach out to our executive consulting team to discuss your project requirements or request a custom proposal.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Channels Info -->
+        <div class="contact-info-panel">
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div>
+              <h4 class="channel-title">Corporate Headquarters</h4>
+              <p class="channel-text">Liberty Hi-Tech Tower, Dhaka, Bangladesh</p>
+            </div>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i data-lucide="phone-call"></i>
+            </div>
+            <div>
+              <h4 class="channel-title">Direct Telephone & Hotline</h4>
+              <p class="channel-text">+880 1700-000000 / +880 1800-000000</p>
+            </div>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i data-lucide="mail-check"></i>
+            </div>
+            <div>
+              <h4 class="channel-title">Official Inquiries & Desk</h4>
+              <p class="channel-text">info@libertyhitech.com / contact@libertyhitech.com</p>
+            </div>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div>
+              <h4 class="channel-title">Operational Hours</h4>
+              <p class="channel-text">Sunday - Thursday: 9:00 AM - 7:00 PM (24/7 Priority Emergency Support)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Name *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Alexander Vance" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Business Email *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="alex@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactSector">Service Sector of Interest *</label>
+                <select id="contactSector" class="form-select" required>
+                  <option value="">Select a Sector</option>
+                  <option value="Software Development">Software Development</option>
+                  <option value="Web Services">Web Services & Platforms</option>
+                  <option value="Security and Surveillance">Security & Surveillance</option>
+                  <option value="Smart Campus Automation">Smart Campus Automation</option>
+                  <option value="Manpower Development">Manpower Development</option>
+                  <option value="Aviation Services">Aviation Services</option>
+                  <option value="Construction Solutions">Construction Solutions</option>
+                  <option value="Product Trading">Product Trading</option>
+                  <option value="Multi-Sector Enterprise Integration">Multi-Sector Enterprise Integration</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Project Details & Requirements *</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Tell us about your organization's goals, timeframe, and specific requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <i data-lucide="send"></i> Submit Enterprise Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="faq-container" id="faq">
+        <div class="section-header" style="margin-bottom: 30px; margin-top: 80px;">
+          <div class="section-badge">
+            <i data-lucide="help-circle"></i> Frequently Asked Questions
+          </div>
+          <h3 class="section-title" style="font-size: 2rem;">Everything You Need To Know</h3>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <!-- Rendered from COMPANY_DATA -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DEEP-DIVE MODAL -->
+  <div class="modal-backdrop" id="serviceModal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-video-box">
+        <video id="modalVideo" class="modal-video-element" controls playsinline>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="service-badge-pill" id="modalBadge">Core Technology</span>
+          <span id="modalIndex" style="color: var(--primary-light); font-weight: 700;">Sector 01</span>
+        </div>
+
+        <h2 class="modal-title" id="modalTitle">Software Development</h2>
+        <p class="modal-desc" id="modalDesc">Detailed description goes here...</p>
+
+        <h4 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 14px;">Key Capabilities & Deliverables</h4>
+        <ul class="mission-list" id="modalFeaturesList" style="margin-bottom: 28px;">
+          <!-- Items -->
+        </ul>
+
+        <div class="modal-specs-grid" id="modalHighlightsGrid">
+          <!-- Highlights -->
+        </div>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 20px;">
+          <button class="btn btn-primary" id="modalInquireBtn">
+            <i data-lucide="check-circle-2"></i> Inquire for This Domain
+          </button>
+          <button class="btn btn-outline" id="modalCloseBtnSecondary">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-col">
+          <a href="#home" class="brand-logo-link">
+            <img src="assets/logo/logo.png" alt="Liberty Hi-Tech Logo" class="brand-logo-img">
+            <div class="brand-text-group">
+              <span class="brand-title">Liberty <span>Hi-Tech</span></span>
+              <span class="brand-tagline">Empowering Innovation</span>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            A forward-thinking organization dedicated to delivering innovative, high-quality solutions across diverse industries: Software, Web, Security, Smart Campus, Aviation, Construction, Manpower, and Global Product Trading.
+          </p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link social-facebook" title="Facebook" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link social-linkedin" title="LinkedIn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="mailto:info@libertyhitech.com" class="social-link social-email" title="Email" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/8801700000000" target="_blank" rel="noopener noreferrer" class="social-link social-whatsapp" title="WhatsApp" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.16-1.32c1.43.79 3.07 1.25 4.84 1.25 5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.54 0-2.98-.44-4.22-1.19l-.3-.18-3.12.8.84-3.04-.2-.32C4.24 15.01 3.8 13.55 3.8 12c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2zm4.55-6.14c-.25-.13-1.47-.73-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.59.13.17 1.76 2.69 4.27 3.77.6.26 1.06.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-column-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Vision</a></li>
+            <li><a href="#services">8 Core Sectors</a></li>
+            <li><a href="#contact">Contact & Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-column-title">8 Core Verticals</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Software Engineering</a></li>
+            <li><a href="#services">Web Services & UX</a></li>
+            <li><a href="#services">Security Surveillance</a></li>
+            <li><a href="#services">Smart Campus IoT</a></li>
+            <li><a href="#services">Manpower Training</a></li>
+            <li><a href="#services">Aviation Logistics</a></li>
+            <li><a href="#services">Construction Solutions</a></li>
+            <li><a href="#services">Global Product Trading</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-column-title">Enterprise Bulletin</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            Subscribe to receive corporate insights, technological updates, and sector reports.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your business email" required>
+            <button type="submit" class="btn btn-primary btn-sm">
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Liberty Hi-Tech</strong>. All Rights Reserved. Empowering Innovation Across Industries.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+          <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+          <a href="#" style="color: var(--text-dim);">Security Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
