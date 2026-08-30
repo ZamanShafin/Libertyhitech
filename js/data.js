@@ -1,29 +1,76 @@
-﻿/**
+/**
  * Liberty Hi-Tech - Corporate Ecosystem Data
- * Contains comprehensive details for the 8 core sectors, video hub, and interactive tools.
+ * Contains comprehensive details for Core Sectors, Cyber Security, Post Graduation Training, and Solutions.
  */
 
 const COMPANY_DATA = {
   name: "Liberty Hi-Tech",
   tagline: "Empowering Innovation Across Industries",
-  about: "Liberty Hi-Tech is a forward-thinking organization dedicated to delivering innovative, high-quality solutions across diverse industries. Our core expertise spans software development, web services, security and surveillance, smart campus automation, manpower development, aviation services, construction, and product trading. We are committed to empowering businesses and individuals with technology-driven solutions that elevate performance, enhance efficiency, and ensure security.",
-  vision: "To become a global leader in integrated technology and service solutions, shaping a future driven by innovation and sustainability.",
+  about: "Liberty Hi-Tech is a forward-thinking technology organization delivering high-impact solutions across core domains: Cyber Security & Defense, Post Graduation Training, Software Development, Web Engineering, Security & Surveillance, Smart Campus Automation, and Manpower Development. We empower enterprises and professionals with advanced technology, certified talent, and mission-critical digital systems.",
+  vision: "To become a premier technology powerhouse and human capital accelerator, driving continuous innovation, defense-grade security, and sustainable industry transformation.",
   mission: [
-    "Empower individuals and businesses with cutting-edge technology solutions.",
-    "Drive growth, enhance security, and enable smarter, more efficient operations across industries.",
-    "Uphold values of innovation, integrity, and excellence.",
-    "Foster thriving communities in a secure and sustainable environment."
+    "Safeguard enterprise digital ecosystems with advanced cyber defense and threat mitigation.",
+    "Accelerate technical careers and corporate capabilities through specialized postgraduate training.",
+    "Engineer resilient, cloud-native custom software and high-conversion web solutions.",
+    "Automate educational and enterprise campuses with smart IoT and AI-driven surveillance.",
+    "Develop skilled global manpower aligned with modern industry benchmarks."
   ],
   stats: [
-    { label: "Core Industries", value: "8+", icon: "layers" },
+    { label: "Core Verticals", value: "7+", icon: "layers" },
     { label: "Enterprise Solutions", value: "250+", icon: "award" },
-    { label: "Global Reach", value: "15+", icon: "globe" },
+    { label: "Graduates & Trainees", value: "5,000+", icon: "graduation-cap" },
     { label: "Client Satisfaction", value: "99.4%", icon: "smile" }
   ],
   services: [
     {
-      id: "software-dev",
+      id: "cyber-security",
       index: "01",
+      title: "Cyber Security & Defense",
+      shortDesc: "Delivering military-grade cybersecurity protocols, zero-trust architectures, vulnerability assessments, and 24/7 SOC monitoring.",
+      fullDesc: "Protecting mission-critical digital infrastructure and enterprise data with comprehensive security intelligence. We provide 24/7 Security Operations Center (SOC) monitoring, threat detection, penetration testing, vulnerability assessments, zero-trust network access (ZTNA), ransomware mitigation, and regulatory compliance audits to secure your organization against evolving global cyber threats.",
+      icon: "shield-alert",
+      badge: "Cyber Defense",
+      image: "assets/images/what-is-cybersecurity-1024x631.jpg",
+      video: "assets/videos/sec.mp4",
+      features: [
+        "24/7 Managed Detection & Incident Response (MDR / SOC)",
+        "Enterprise Penetration Testing & Vulnerability Audits",
+        "Zero-Trust Network Architecture & Identity Access Management",
+        "Cloud Security Posture (CSPM) & Endpoint Protection",
+        "Disaster Recovery, Ransomware Shield & Forensic Analysis"
+      ],
+      highlights: [
+        { label: "Defense Level", val: "Military-Grade Zero-Trust" },
+        { label: "Monitoring", val: "24/7/365 Real-Time SOC" },
+        { label: "Compliance", val: "ISO 27001 & NIST Standards" }
+      ]
+    },
+    {
+      id: "postgrad-training",
+      index: "02",
+      title: "Post Graduation Training",
+      shortDesc: "Specialized postgraduate training programs, hands-on enterprise labs, and career acceleration certifications for tech graduates.",
+      fullDesc: "Empowering university graduates and working professionals with advanced, industry-aligned technical skillsets. Our postgraduate training ecosystem features hands-on laboratory simulations, real-world project portfolios, mentorship from senior tech architects, and direct hiring placement networks in Software Engineering, Cloud Architecture, AI/ML, and Cyber Defense.",
+      icon: "graduation-cap",
+      badge: "Post-Grad Academy",
+      image: "assets/images/Study.png",
+      video: "assets/videos/postgrad-training.mp4",
+      features: [
+        "Advanced Postgraduate Specialization & Technical Bootcamps",
+        "Hands-On Enterprise Lab Projects & Real-World Case Studies",
+        "1-on-1 Mentorship from Senior Industry Practitioners",
+        "Direct Corporate Placement & Global Hiring Pipelines",
+        "Recognized Professional Certifications & Diplomas"
+      ],
+      highlights: [
+        { label: "Curriculum", val: "Enterprise Industry-Aligned" },
+        { label: "Mentorship", val: "Senior Industry Architects" },
+        { label: "Placement", val: "Direct Enterprise Pipelines" }
+      ]
+    },
+    {
+      id: "software-dev",
+      index: "03",
       title: "Software Development",
       shortDesc: "Crafting tailored software solutions that meet the unique needs of businesses, driving productivity and innovation.",
       fullDesc: "We architect, build, and deploy enterprise-grade custom software applications tailored to streamline complex business workflows. From robust enterprise resource planning (ERP) platforms and AI-assisted automation to high-concurrency microservices, our software engineering team delivers scalable, secure, and modern digital ecosystems.",
@@ -46,7 +93,7 @@ const COMPANY_DATA = {
     },
     {
       id: "web-services",
-      index: "02",
+      index: "04",
       title: "Web Services & Platforms",
       shortDesc: "Developing dynamic and responsive websites that enhance online presence and user engagement.",
       fullDesc: "Our digital engineering studio designs high-impact, lightning-fast web applications, e-commerce platforms, and interactive corporate portals. Blending intuitive UI/UX with modern frameworks, we ensure seamless responsiveness across all screen sizes and search engine dominance.",
@@ -69,7 +116,7 @@ const COMPANY_DATA = {
     },
     {
       id: "security-surveillance",
-      index: "03",
+      index: "05",
       title: "Security & Surveillance",
       shortDesc: "Implementing cutting-edge surveillance systems to ensure safety and peace of mind for businesses and communities.",
       fullDesc: "Protecting human lives and corporate assets with intelligent surveillance infrastructure. We integrate state-of-the-art 4K optical cameras, AI-powered computer vision for anomaly detection, biometric access control, perimeter sensors, and 24/7 centralized monitoring dashboards.",
@@ -92,11 +139,11 @@ const COMPANY_DATA = {
     },
     {
       id: "smart-campus",
-      index: "04",
+      index: "06",
       title: "Smart Campus Automation",
       shortDesc: "Revolutionizing educational and corporate campuses with intelligent, technology-driven automation solutions.",
       fullDesc: "Transforming traditional educational institutions and corporate headquarters into interconnected smart environments. Our ecosystem includes complete Learning Management Systems (LMS), student and faculty portals, automated attendance with facial recognition, digital library management, and IoT smart room climate controls.",
-      icon: "graduation-cap",
+      icon: "layout-grid",
       badge: "Campus IoT",
       image: "assets/images/student-and-hr-management.png",
       video: "assets/videos/LMS.mp4",
@@ -115,7 +162,7 @@ const COMPANY_DATA = {
     },
     {
       id: "manpower-dev",
-      index: "05",
+      index: "07",
       title: "Manpower Development",
       shortDesc: "Providing training and resources to develop skilled professionals ready to meet industry demands.",
       fullDesc: "Bridging the global industry talent gap through customized corporate training, technical certifications, and leadership bootcamps. We equip candidates with modern IT competencies, management capabilities, and practical operational expertise aligned with high-growth market requirements.",
@@ -135,75 +182,6 @@ const COMPANY_DATA = {
         { label: "Mentors", val: "Senior Industry Practitioners" },
         { label: "Placement", val: "Direct Enterprise Pipelines" }
       ]
-    },
-    {
-      id: "aviation-services",
-      index: "06",
-      title: "Aviation Services",
-      shortDesc: "Delivering comprehensive solutions to support the aviation sector, from logistics to operational excellence.",
-      fullDesc: "Providing precision logistics, ground support equipment coordination, charter management, and operational consulting for commercial and private aviation. We ensure strict adherence to international aviation safety guidelines, rapid turnaround, and unmatched efficiency on every flight sector.",
-      icon: "plane",
-      badge: "Aero & Logistics",
-      image: "assets/images/miami-florida-miami-international-airport-83582371.jpg",
-      video: "assets/videos/air.mp4",
-      features: [
-        "Comprehensive Aviation Ground Support Logistics",
-        "Aircraft Charter Coordination & Flight Operations",
-        "Aviation Fuel, Catering & Transit Management",
-        "Aviation Safety Compliance & Equipment Sourcing",
-        "Crew & Passenger Handling Protocol Services"
-      ],
-      highlights: [
-        { label: "Compliance", val: "ICAO & FAA Benchmark Standards" },
-        { label: "Availability", val: "24/7 Worldwide Flight Dispatch" },
-        { label: "Safety Record", val: "Zero-Incident Standards" }
-      ]
-    },
-    {
-      id: "construction-solutions",
-      index: "07",
-      title: "Construction Solutions",
-      shortDesc: "Offering quality construction materials and innovative designs for efficient and sustainable infrastructure development.",
-      fullDesc: "Delivering structural engineering excellence, modern architectural concepts, and high-durability construction materials. We partner on commercial developments, residential infrastructure, and industrial complexes with a steadfast commitment to sustainability, green building materials, and timely project delivery.",
-      icon: "hard-hat",
-      badge: "Infrastructure",
-      image: "assets/images/photo-1486406146926-c627a92ad1ab.jpg",
-      video: "assets/videos/cons.mp4",
-      features: [
-        "Architectural Planning & Sustainable Structural Design",
-        "Premium Grade Construction Materials Procurement",
-        "Commercial, Industrial & Residential Project Execution",
-        "Green Building Strategies & Energy Optimization",
-        "Project Management, Site Safety & Quality Assurance"
-      ],
-      highlights: [
-        { label: "Design", val: "BIM & Modern 3D Modeling" },
-        { label: "Sustainability", val: "Eco-Friendly Concrete & Steel" },
-        { label: "Execution", val: "On-Time & On-Budget Delivery" }
-      ]
-    },
-    {
-      id: "product-trading",
-      index: "08",
-      title: "Product Trading",
-      shortDesc: "Supplying high-quality products that cater to diverse industry needs with a focus on reliability and efficiency.",
-      fullDesc: "Connecting global manufacturers and international buyers with seamless supply chain operations. From export-quality ready-made garments and textiles to industrial hardware, technology equipment, and specialty commodities, we maintain rigorous quality checks and end-to-end freight transparency.",
-      icon: "package",
-      badge: "Global Commerce",
-      image: "assets/images/port-of-shanghai-global-trade-hub-economic-powerhouse.jpg",
-      video: "assets/videos/trade.mp4",
-      features: [
-        "International Import & Export Supply Chain Management",
-        "Quality Apparel & Textile Sourcing (Denim, Knitwear, Uniforms)",
-        "Technology Hardware & Commercial Equipment Distribution",
-        "Comprehensive Freight, Customs & Port Logistics",
-        "Rigorous Quality Control & International Compliance"
-      ],
-      highlights: [
-        { label: "Coverage", val: "Global Trade Hubs & Ports" },
-        { label: "Quality", val: "100% Pre-Shipment Inspection" },
-        { label: "Turnaround", val: "Optimized Sea & Air Freight" }
-      ]
     }
   ],
   videos: [
@@ -211,10 +189,28 @@ const COMPANY_DATA = {
       id: "welcome-hero",
       title: "Liberty Hi-Tech Corporate Introduction",
       category: "Corporate Overview",
-      description: "Experience how Liberty Hi-Tech is empowering innovation, shaping communities, and driving technological transformation across 8 major industries.",
+      description: "Experience how Liberty Hi-Tech is empowering innovation, shaping communities, and driving technological transformation across core sectors.",
       src: "assets/videos/welcome-02.mp4",
       duration: "0:45",
       badge: "Featured Intro"
+    },
+    {
+      id: "cyber-reel",
+      title: "Cyber Security & Threat Defense",
+      category: "Cyber Defense",
+      description: "Zero-trust network architectures, vulnerability assessments, and 24/7 SOC managed defenses in action.",
+      src: "assets/videos/sec.mp4",
+      duration: "0:45",
+      badge: "Cyber Security"
+    },
+    {
+      id: "postgrad-reel",
+      title: "Post Graduation Training & Career Pathways",
+      category: "Post-Grad Academy",
+      description: "Equipping graduates with advanced hands-on enterprise technology skills and direct industry placement pipelines.",
+      src: "assets/videos/postgrad-training.mp4",
+      duration: "0:40",
+      badge: "Training"
     },
     {
       id: "soft-reel",
@@ -253,24 +249,6 @@ const COMPANY_DATA = {
       badge: "Smart Campus"
     },
     {
-      id: "air-reel",
-      title: "Aviation Logistics & Operations",
-      category: "Aviation",
-      description: "Global flight support, ground equipment coordination, and seamless aviation services meeting the highest safety standards.",
-      src: "assets/videos/air.mp4",
-      duration: "0:40",
-      badge: "Aviation"
-    },
-    {
-      id: "trade-reel",
-      title: "Global Product Trading & Supply Chain",
-      category: "Commerce",
-      description: "End-to-end import/export logistics, quality apparel trading, and worldwide distribution networks.",
-      src: "assets/videos/trade.mp4",
-      duration: "0:45",
-      badge: "Trading"
-    },
-    {
       id: "man-reel",
       title: "Manpower & Talent Development",
       category: "Workforce",
@@ -278,25 +256,20 @@ const COMPANY_DATA = {
       src: "assets/videos/man.mp4",
       duration: "0:30",
       badge: "Manpower"
-    },
-    {
-      id: "cons-reel",
-      title: "Sustainable Construction & Engineering",
-      category: "Infrastructure",
-      description: "Innovative architectural design, premium sustainable materials, and modern civil construction projects.",
-      src: "assets/videos/cons.mp4",
-      duration: "0:55",
-      badge: "Construction"
     }
   ],
   faqs: [
     {
       q: "What makes Liberty Hi-Tech unique compared to single-focus companies?",
-      a: "Liberty Hi-Tech uniquely unites 8 critical industry sectors—from advanced software engineering and security to aviation, construction, and global trade—under one cohesive technology-driven ecosystem. This allows clients to benefit from cross-industry synergy, single-vendor accountability, and superior cost efficiencies."
+      a: "Liberty Hi-Tech unites advanced cybersecurity, postgraduate vocational training, software development, web engineering, physical AI surveillance, smart campus automation, and workforce development under one cohesive technology-driven ecosystem."
     },
     {
-      q: "How can we start a project or consultation with Liberty Hi-Tech?",
-      a: "You can initiate a consultation through our Interactive Solution Estimator, submit an inquiry via our contact form, or email our enterprise advisory desk directly. Our specialists analyze your specific sector requirements and deliver a comprehensive proposal within 24 to 48 hours."
+      q: "How can students or organizations enroll in Post Graduation Training?",
+      a: "You can submit an application via our contact form or contact our training admissions desk. We offer specialized tracks in software development, cybersecurity, cloud architecture, and data engineering with structured mentorship and placement support."
+    },
+    {
+      q: "What cybersecurity services does Liberty Hi-Tech provide?",
+      a: "We offer end-to-end cyber defense including 24/7 Security Operations Center (SOC) monitoring, penetration testing, vulnerability assessment, zero-trust network implementation, incident response, and regulatory compliance audits (ISO 27001 / NIST)."
     },
     {
       q: "Are Liberty Hi-Tech's security and campus automation solutions customizable?",
@@ -304,11 +277,7 @@ const COMPANY_DATA = {
     },
     {
       q: "What geographic regions does Liberty Hi-Tech serve?",
-      a: "We provide software and web engineering worldwide, while our physical security, campus automation, aviation support, construction, and product trading operations span regional and international hubs across Asia, the Middle East, Europe, and the Americas."
-    },
-    {
-      q: "How does Liberty Hi-Tech ensure quality and sustainability in construction and trading?",
-      a: "We adhere to ISO-grade quality control, international safety standards, and sustainable procurement practices. All construction materials undergo stringent laboratory testing, and our trading goods receive thorough pre-shipment inspections."
+      a: "We provide cybersecurity, postgraduate training, and software/web engineering worldwide with regional hubs and facility deployments across Bangladesh and global partner networks."
     }
   ]
 };
