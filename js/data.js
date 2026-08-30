@@ -48,12 +48,12 @@ const COMPANY_DATA = {
     {
       id: "postgrad-training",
       index: "02",
-      title: "Post Graduation Training",
+      title: "Post Graduate Training",
       shortDesc: "Specialized postgraduate training programs, hands-on enterprise labs, and career acceleration certifications for tech graduates.",
       fullDesc: "Empowering university graduates and working professionals with advanced, industry-aligned technical skillsets. Our postgraduate training ecosystem features hands-on laboratory simulations, real-world project portfolios, mentorship from senior tech architects, and direct hiring placement networks in Software Engineering, Cloud Architecture, AI/ML, and Cyber Defense.",
       icon: "graduation-cap",
       badge: "Post-Grad Academy",
-      image: "assets/images/Study.png",
+      image: "assets/images/postgraduate-training.jpg",
       video: "assets/videos/postgrad-training.mp4",
       features: [
         "Advanced Postgraduate Specialization & Technical Bootcamps",
@@ -69,8 +69,31 @@ const COMPANY_DATA = {
       ]
     },
     {
-      id: "software-dev",
+      id: "manpower-dev",
       index: "03",
+      title: "Manpower Development",
+      shortDesc: "Providing training and resources to develop skilled professionals ready to meet industry demands.",
+      fullDesc: "Bridging the global industry talent gap through customized corporate training, technical certifications, and leadership bootcamps. We equip candidates with modern IT competencies, management capabilities, and practical operational expertise aligned with high-growth market requirements.",
+      icon: "users",
+      badge: "Talent & Training",
+      image: "assets/images/depositphotos_58115991-stock-photo-training-and-development.jpg",
+      video: "assets/videos/man.mp4",
+      features: [
+        "Corporate Workforce Upskilling & Tech Bootcamps",
+        "Certified Professional Development Programs",
+        "Vocational & Specialized Technical Training",
+        "Leadership, Soft Skills & Team Alignment Workshops",
+        "Talent Acquisition & Strategic Placement Support"
+      ],
+      highlights: [
+        { label: "Curriculum", val: "Industry-Verified Modules" },
+        { label: "Mentors", val: "Senior Industry Practitioners" },
+        { label: "Placement", val: "Direct Enterprise Pipelines" }
+      ]
+    },
+    {
+      id: "software-dev",
+      index: "04",
       title: "Software Development",
       shortDesc: "Crafting tailored software solutions that meet the unique needs of businesses, driving productivity and innovation.",
       fullDesc: "We architect, build, and deploy enterprise-grade custom software applications tailored to streamline complex business workflows. From robust enterprise resource planning (ERP) platforms and AI-assisted automation to high-concurrency microservices, our software engineering team delivers scalable, secure, and modern digital ecosystems.",
@@ -93,7 +116,7 @@ const COMPANY_DATA = {
     },
     {
       id: "web-services",
-      index: "04",
+      index: "05",
       title: "Web Services & Platforms",
       shortDesc: "Developing dynamic and responsive websites that enhance online presence and user engagement.",
       fullDesc: "Our digital engineering studio designs high-impact, lightning-fast web applications, e-commerce platforms, and interactive corporate portals. Blending intuitive UI/UX with modern frameworks, we ensure seamless responsiveness across all screen sizes and search engine dominance.",
@@ -116,7 +139,7 @@ const COMPANY_DATA = {
     },
     {
       id: "security-surveillance",
-      index: "05",
+      index: "06",
       title: "Security & Surveillance",
       shortDesc: "Implementing cutting-edge surveillance systems to ensure safety and peace of mind for businesses and communities.",
       fullDesc: "Protecting human lives and corporate assets with intelligent surveillance infrastructure. We integrate state-of-the-art 4K optical cameras, AI-powered computer vision for anomaly detection, biometric access control, perimeter sensors, and 24/7 centralized monitoring dashboards.",
@@ -139,7 +162,7 @@ const COMPANY_DATA = {
     },
     {
       id: "smart-campus",
-      index: "06",
+      index: "07",
       title: "Smart Campus Automation",
       shortDesc: "Revolutionizing educational and corporate campuses with intelligent, technology-driven automation solutions.",
       fullDesc: "Transforming traditional educational institutions and corporate headquarters into interconnected smart environments. Our ecosystem includes complete Learning Management Systems (LMS), student and faculty portals, automated attendance with facial recognition, digital library management, and IoT smart room climate controls.",
@@ -158,29 +181,6 @@ const COMPANY_DATA = {
         { label: "Capacity", val: "50,000+ Concurrent Students" },
         { label: "Integration", val: "Cloud LMS & Mobile Apps" },
         { label: "Efficiency", val: "70% Reduction in Admin Overhead" }
-      ]
-    },
-    {
-      id: "manpower-dev",
-      index: "07",
-      title: "Manpower Development",
-      shortDesc: "Providing training and resources to develop skilled professionals ready to meet industry demands.",
-      fullDesc: "Bridging the global industry talent gap through customized corporate training, technical certifications, and leadership bootcamps. We equip candidates with modern IT competencies, management capabilities, and practical operational expertise aligned with high-growth market requirements.",
-      icon: "users",
-      badge: "Talent & Training",
-      image: "assets/images/depositphotos_58115991-stock-photo-training-and-development.jpg",
-      video: "assets/videos/man.mp4",
-      features: [
-        "Corporate Workforce Upskilling & Tech Bootcamps",
-        "Certified Professional Development Programs",
-        "Vocational & Specialized Technical Training",
-        "Leadership, Soft Skills & Team Alignment Workshops",
-        "Talent Acquisition & Strategic Placement Support"
-      ],
-      highlights: [
-        { label: "Curriculum", val: "Industry-Verified Modules" },
-        { label: "Mentors", val: "Senior Industry Practitioners" },
-        { label: "Placement", val: "Direct Enterprise Pipelines" }
       ]
     }
   ],

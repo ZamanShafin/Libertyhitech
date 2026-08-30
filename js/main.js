@@ -147,7 +147,7 @@ function initVisionMissionTabs() {
 }
 
 /* ==========================================================================
-   5. 8 CORE SERVICES RENDERING & FILTERING
+   5. CORE SERVICES RENDERING & FILTERING
    ========================================================================== */
 function renderServices(filter = 'all') {
   const grid = document.getElementById('servicesGrid');
@@ -155,17 +155,17 @@ function renderServices(filter = 'all') {
 
   grid.innerHTML = '';
 
+  const cyberSecIds = ['cyber-security', 'security-surveillance'];
   const techIds = ['software-dev', 'web-services'];
-  const secIds = ['security-surveillance', 'smart-campus'];
-  const infraIds = ['aviation-services', 'construction-solutions'];
-  const commIds = ['product-trading', 'manpower-dev'];
+  const trainingIds = ['postgrad-training', 'manpower-dev'];
+  const campusIds = ['smart-campus'];
 
   const filtered = COMPANY_DATA.services.filter(s => {
     if (filter === 'all') return true;
+    if (filter === 'cyber-sec' || filter === 'security') return cyberSecIds.includes(s.id);
     if (filter === 'tech') return techIds.includes(s.id);
-    if (filter === 'security') return secIds.includes(s.id);
-    if (filter === 'infrastructure') return infraIds.includes(s.id);
-    if (filter === 'commerce') return commIds.includes(s.id);
+    if (filter === 'training') return trainingIds.includes(s.id);
+    if (filter === 'smart-campus') return campusIds.includes(s.id);
     return true;
   });
 
@@ -325,8 +325,10 @@ window.prefillContactForSector = function(sectorTitle) {
   }
 
   if (sectorSelect) {
+    const sTitle = sectorTitle.toLowerCase();
     for (let i = 0; i < sectorSelect.options.length; i++) {
-      if (sectorSelect.options[i].text.toLowerCase().includes(sectorTitle.toLowerCase())) {
+      const opt = sectorSelect.options[i].text.toLowerCase();
+      if (opt && (opt.includes(sTitle) || sTitle.includes(opt) || (sTitle.includes('cyber') && opt.includes('cyber')) || (sTitle.includes('post') && opt.includes('post')))) {
         sectorSelect.selectedIndex = i;
         break;
       }
@@ -336,8 +338,6 @@ window.prefillContactForSector = function(sectorTitle) {
   if (msgArea) {
     msgArea.value = `Hello Liberty Hi-Tech,\n\nI would like to inquire regarding ${sectorTitle} and discuss deployment specifications for our organization.`;
   }
-
-  
 };
 
 /* ==========================================================================
